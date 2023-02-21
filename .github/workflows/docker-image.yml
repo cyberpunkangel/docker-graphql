@@ -27,7 +27,7 @@ jobs:
     
     - name: Build Docker Image
       run: |
-        docker container run -p 3000:3000 apeso/docker-graphql:0.0.2 .
+        docker build -t apeso/docker-graphql:0.0.2 .
         
     - name: Push Docker Image
       run: |
